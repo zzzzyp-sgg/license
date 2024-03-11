@@ -1,0 +1,4 @@
+bin/libDLicense.so
+bin/license.lic
+bin/test
+src/licenseLib.c
