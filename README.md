@@ -17,8 +17,11 @@ This version is for those who use the docker image. Since the MAC address in the
 image may change, we only need to activate the software the first time we use it  
 to get permanent access thereafter.
 # Notes  
-The rights to this project are vested in[鸣谷导航](https://www.navmg.com/#/home)  
-![My Image](image/鸣谷.png)
+The rights to this project are vested in [鸣谷导航](https://www.navmg.com/#/home) 
+
+
+![My Image](image/鸣谷.png)  
+
 Due to security reasons, we have not open sourced all the features, if you are  
 interested in this project, you can contact me by email at my email address:  
 zzzz_zyp@whu.edu.cn
