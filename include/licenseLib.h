@@ -19,6 +19,9 @@
 #include <netdb.h>
 #endif
 
+#define StaticLib
+
+#ifndef StaticLib
 #ifdef WIN_DLL
 #define EXPORT __declspec(dllexport) /* for Windows DLL */
 #elif defined(WIN32)
@@ -42,6 +45,18 @@ EXPORT bool getAccessOff(char* _filename);
 #define PORT 80
 
 EXPORT bool getAccessFrontend(char* _uid);
+char* httpPost(const char *_postData);
+#endif
+
+#else
+bool getAccessOn(char* _filename, char* _uid);
+bool getAccessOff(char* _filename);
+
+#define HOST "cloud.navfirst.com"
+#define PATH "/iot-asset/frontend/verify"
+#define PORT 80
+
+bool getAccessFrontend(char* _uid);
 char* httpPost(const char *_postData);
 #endif
 
