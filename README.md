@@ -1,8 +1,7 @@
 # A simple permission validation library  
 
 This is a library for software rights verification.  
-We have categorized the overall functionality into an online version, an offline  
-version and a front-end activated version.  
+We have categorized the overall functionality into an online version, an offline version and a front-end activated version.  
 
 ## Online version  
 
