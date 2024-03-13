@@ -10,10 +10,10 @@ int main(int argc, char* argv[])
     // online function
     // getAccessOn(filename, uid);
     // offline function
-    getAccessOff(filename);
+    // getAccessOff(filename);
     // frontend function
-    // bool test = getAccessFrontend(uid);
-    // printf("test: %d\n", test);
+    bool test = getAccessFrontend(uid);
+    printf("test: %d\n", test);
 
     return 0;
 }

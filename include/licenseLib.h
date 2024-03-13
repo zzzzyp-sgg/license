@@ -11,12 +11,13 @@
 #include <time.h>
 #include <stdbool.h>
 #include <string.h>
-#include <unistd.h>
 
-#ifndef WIN32
+
+#ifndef _WIN32
 #include <sys/socket.h>
 #include <arpa/inet.h>
 #include <netdb.h>
+#include <unistd.h>
 #endif
 
 #define StaticLib
@@ -52,12 +53,15 @@ char* httpPost(const char *_postData);
 bool getAccessOn(char* _filename, char* _uid);
 bool getAccessOff(char* _filename);
 
+#ifndef _WIN32
 #define HOST "cloud.navfirst.com"
 #define PATH "/iot-asset/frontend/verify"
 #define PORT 80
 
 bool getAccessFrontend(char* _uid);
 char* httpPost(const char *_postData);
+#endif
+
 #endif
 
 #endif
